@@ -4,6 +4,7 @@
     <title>Square Cafe</title>
 
     <link rel="stylesheet" type="text/css" href="square.css" />
+
   </head>
   <body>
     <div id="headmast">
@@ -29,7 +30,7 @@
           <div>
             <!-- See this "drink[]" name? -->
             <!-- This is turned into an array of items -->
-            <select name="drink[]">
+            <select name="drink[]" class = "drank">
               <option>Please select a drink</option>
               <optgroup label="Coffee">
                 <option data-price="200" value="house">House Coffee — $2.00</option>
@@ -61,7 +62,7 @@
         </form>
       </div>
 
-
+<!-- 
       <div class="panel">
         <h2>Where We're At</h2>
         <iframe
@@ -69,7 +70,7 @@
           height="450"
           frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=austin+tx&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.679342,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;ll=30.307689,-97.753601&amp;spn=0.679622,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=austin+tx&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.679342,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;ll=30.307689,-97.753601&amp;spn=0.679622,1.352692&amp;t=m&amp;z=10" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-      </div>
+      </div> -->
 
     </div>
 
@@ -77,5 +78,10 @@
       Copyright &copy; 2013
     </div>
 
-  </body>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="square.js"></script>
+
+</body>
 </html>
