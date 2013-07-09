@@ -23,51 +23,9 @@
 
       </div>
       <div class="panel">
-        <h2>What Would You Like?</h2>
+      <p class = "message"> Your order will be ready in 10 minutes! Thanks! </p>
+     
 
-
-        <form id = "form">
-          <div>
-            <!-- See this "drink[]" name? -->
-            <!-- This is turned into an array of items -->
-            <select name="drink[]" class = "drank">
-              <option>Please select a drink</option>
-              <optgroup label="Coffee">
-                <option data-price="200" value="house">House Coffee — $2.00</option>
-                <option data-price="200" value="iced">Iced Coffee — $2.00</option>
-                <option data-price="200" value="bold">Bold Coffee — $2.00</option>
-              </optgroup>
-              <optgroup label="Espresso">
-                <!-- See this 'data-price' attribute? -->
-                <!-- We can create arbitrary attributes in HTML5 by prepending the attribute name with 'data-' -->
-                <option data-price="300" value="americano">Americano — $3.00</option>
-                <option data-price="200" value="espresso">Espresso — $2.00</option>
-                <option data-price="350" value="cappucino">Cappucino — $3.50</option>
-              </optgroup>
-              <optgroup label="Teas">
-                <option data-price="300" value="green">Green Tea — $3.00</option>
-                <option data-price="300" value="black">Black Tea — $3.00</option>
-                <option data-price="300" value="peach">Peach Tea — $3.00</option>
-              </optgroup>
-            </select>
-          </div>
-          <div id = "order">
-          <dl>
-            <dt># of Drinks</dt>
-            <dd id="drinks">0</dd>
-
-            <dt>Cost</dt>
-            <dd id="cost">$0.00</dd>
-          </dl>
-
-          
-            <br /> 
-            <button type="submit"> Checkout Here </button>
-
-          </div>
-
-
-        </form>
       </div>
 
 <!-- 

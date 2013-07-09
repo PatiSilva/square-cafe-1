@@ -39,6 +39,9 @@ h1, p {
   text-shadow: #333 3px 3px 3px;
 }
 
+#order {
+  float: right;
+}
 
 dl {
   border-top: solid #FFF 1px;
@@ -48,6 +51,7 @@ dl {
   width: 10em;
 }
 
+
 dt {
   clear: left;
   float: left;
@@ -55,6 +59,11 @@ dt {
   text-align: right;
 }
 
+
+
+button {
+  float: right;
+}
 
 .panel, #sidebar {
     border-radius: 4px;

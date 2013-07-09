@@ -15,7 +15,7 @@ $('select').change(function () {
   // the event we are watching for ('change'),
   // the element we are watching on ('select'), and
   // the function to call when our the element changes (our anonymous function, here)
-
+var total = 0 
 $('form').on('change', 'select', function(){
     // alert("my my, how you've changed");
     //  alert($('select').first().html());
@@ -25,9 +25,21 @@ $('form').on('change', 'select', function(){
    var drink_numbers = $('select').length-1
    $('#drinks').text(drink_numbers);
    drinks_array = $('select')
-
+   total = total + Number($(this).find(':selected').attr('data-price')); 
+   $('#cost').text("$"+(total/100).toFixed(2))
 
   });
+
+
+$('#form').submit(function() {
+ alert("Thanks! Your order will be ready in 10 minutes.");
+ event.preventDefault(); 
+ $.post('/shop',total, function(response) {
+ // alert('Success!');
+ $('#form').append("<br><br>"+response);
+ });
+
+}); 
 
 // alert($('select'));
 // function calculateTotal {
